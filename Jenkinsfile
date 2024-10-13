@@ -15,7 +15,7 @@ pipeline{
         stage("Code"){
             steps{
                script{
-                clone("https://github.com/bhojrajaws/django-notes-app.git","main")
+                clone("https://github.com/LondheShubham153/django-notes-app.git","main")
                }
                 
             }
@@ -23,7 +23,7 @@ pipeline{
         stage("Build"){
             steps{
                 script{
-                docker_build("notes-app","latest","bhojraj04")
+                docker_build("notes-app","latest","trainwithshubham")
                 }
             }
         }
